@@ -5,10 +5,8 @@ import { ContaCorrente } from "./ContaCorrente";
 
 export class Cliente extends Pessoa {
   private enderecos: Endereco[] = [];
-  private contas: Conta[];
-  constructor(cpf: string,nome: string,telefone: string,public vip: boolean) {
+  constructor(cpf: string,nome: string,telefone: string,public vip: boolean, private contas: Conta[]) {
     super(cpf, nome, telefone);
-    this.contas = [];
   }
 
   adicionarEndereco(endereco: Endereco): void {

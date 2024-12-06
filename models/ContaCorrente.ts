@@ -1,7 +1,7 @@
 import { Conta } from "./Conta";
 
 export class ContaCorrente extends Conta {
-  constructor(numero: string, public limite: number) {
+  constructor(numero: string, private limite: number) {
     super(numero);
   }
 
