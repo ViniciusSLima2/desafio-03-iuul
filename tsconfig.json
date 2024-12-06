@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target": "ES6",                     // Versão do JavaScript de saída.
+    "module": "CommonJS",                // Usado para compatibilidade com o Node.js.
+    "outDir": "./dist",                  // Pasta onde os arquivos compilados serão salvos.
+    "rootDir": "./src",                  // Diretório onde os arquivos TypeScript estão localizados.
+    "strict": true,                      // Habilita verificações rigorosas.
+    "esModuleInterop": true              // Permite usar importações padrão com CommonJS.
+  },
+  "include": ["src/**/*"],               // Inclui todos os arquivos TypeScript na pasta src.
+  "exclude": ["node_modules"]            // Exclui arquivos desnecessários.
+}
